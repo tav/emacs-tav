@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: For Loop
+# contributor: tav <tav@espians.com>
+# --
+for ${1:_}, ${2:_} := range $3 {
+	$0
+}

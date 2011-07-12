@@ -1,0 +1,11 @@
+# Specific paths
+
+ac-dicts/
+ac-comphist.dat
+bookmarks
+code/
+old/
+
+# File patterns
+
+*.elc

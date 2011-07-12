@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Struct
+# contributor: tav <tav@espians.com>
+# --
+type $1 struct {
+	$0
+}

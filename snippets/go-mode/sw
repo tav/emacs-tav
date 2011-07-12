@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Switch
+# contributor: tav <tav@espians.com>
+# --
+switch $1 := $2 {
+case $3:
+	$4
+case default:
+	$0
+}

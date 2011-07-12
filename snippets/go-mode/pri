@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Print without newline
+# contributor: tav <tav@espians.com>
+# --
+fmt.Printf("${1:%s}"${1:$(if (string-match "%" text) ", " "\)")
+}$2${1:$(if (string-match "%" text) "\)" "")}

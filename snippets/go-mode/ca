@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Case
+# contributor: tav <tav@espians.com>
+# --
+case $1:
+	$2
+$0

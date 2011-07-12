@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: New Package
+# contributor: tav <tav@espians.com>
+# --
+`(get-public-domain-header)`
+
+package ${2:_}
+
+import (
+"$3"
+)
+
+$0

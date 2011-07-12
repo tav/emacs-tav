@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: If Clause
+# contributor: tav <tav@espians.com>
+# --
+if $1 {
+	$0
+}

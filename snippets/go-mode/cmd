@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: New Command
+# contributor: tav <tav@espians.com>
+# --
+`(get-public-domain-header)`
+
+package main
+
+import (
+"$1"
+)
+
+func main() {
+	$0
+}

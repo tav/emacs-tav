@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Any
+# contributor: tav <tav@espians.com>
+# --
+interface{}$0
