@@ -115,6 +115,9 @@
 (setq inhibit-startup-echo-area-message t)
 (setq visible-bell t)
 
+(setq display-time-day-and-date t)
+(display-time)
+
 ; ------------------------------------------------------------------------------
 ; Auto-completion
 ; ------------------------------------------------------------------------------
@@ -176,7 +179,7 @@
 (eval-after-load "autopair" '(diminish 'autopair-mode))
 (eval-after-load "flyspell" '(diminish 'flyspell-mode))
 (eval-after-load "hideshow" '(diminish 'hs-minor-mode))
-(eval-after-load "undo-tree" '(diminish 'undo-tree-mode))
+; (eval-after-load "undo-tree" '(diminish 'undo-tree-mode))
 (eval-after-load "yasnippet" '(diminish 'yas/minor-mode))
 
 ; ------------------------------------------------------------------------------
@@ -341,9 +344,9 @@ This is useful for filling list item paragraphs."
 ; Undo
 ; ------------------------------------------------------------------------------
 
-(require 'undo-tree)
+; (require 'undo-tree)
 
-(global-undo-tree-mode)
+; (global-undo-tree-mode)
 
 ; ------------------------------------------------------------------------------
 ; Unique Buffer Names
