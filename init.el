@@ -93,7 +93,7 @@
 		'((wait-for-wm . nil)
 		  (top . 30) (left . 820)
 		  (width . 110) (height . 60)
-		  (alpha . 80)
+		  (alpha . 73)
 		  (font . "-apple-monaco-medium-r-normal--14-140-72-72-m-140-iso10646-1")
 		  )))
 
@@ -412,6 +412,7 @@ This is useful for filling list item paragraphs."
   (define-key coffee-mode-map [(meta r)] 'coffee-compile-buffer)
   (define-key coffee-mode-map [(meta R)] 'coffee-compile-file)
   (setq coffee-args-compile '("-c" "--bare"))
+  (enable-hide-show)
   (set (make-local-variable 'tab-width) 2))
 
 (add-hook 'coffee-mode-hook 'coffee-mode-custom)
@@ -613,7 +614,7 @@ This is useful for filling list item paragraphs."
   '(add-to-list
 	'rng-schema-locating-files "~/.emacs.d/code/html5-el/schemas.xml"))
 
-(require 'whattf-dt)
+; (require 'whattf-dt)
 
 ; ------------------------------------------------------------------------------
 ; YAML
@@ -743,10 +744,10 @@ This is useful for filling list item paragraphs."
 (define-key ac-mode-map [M-tab] 'auto-complete)
 (define-key global-map "\M-_" 'insert-em-dash)
 
-(define-key global-map (kbd "<S-up>") 'previous-line-mark)
-(define-key global-map (kbd "<S-down>") 'next-line-mark)
-(define-key global-map (kbd "<S-left>") 'backward-char-mark)
-(define-key global-map (kbd "<S-right>") 'forward-char-mark)
+;; (define-key global-map (kbd "<S-up>") 'previous-line-mark)
+;; (define-key global-map (kbd "<S-down>") 'next-line-mark)
+;; (define-key global-map (kbd "<S-left>") 'backward-char-mark)
+;; (define-key global-map (kbd "<S-right>") 'forward-char-mark)
 
 (define-key osx-key-mode-map (kbd "A-/") 'bookmark-bmenu-list)
 (define-key osx-key-mode-map (kbd "A-b") 'bookmark-set)
@@ -824,3 +825,5 @@ This is useful for filling list item paragraphs."
 ; http://www.emacswiki.org/emacs/rainbow-delimiters.el
 
 ; (load "~/.emacs.d/custom.el")
+
+; (set-frame-parameter nil 'alpha 73)
